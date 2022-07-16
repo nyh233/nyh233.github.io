@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-16T09:37:43.687Z</updated>
+  <updated>2022-07-16T11:49:12.309Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,16 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>给我的世界Nukkit服务器内网穿透</title>
+    <link href="http://example.com/2022/07/16/minecraftFrp/"/>
+    <id>http://example.com/2022/07/16/minecraftFrp/</id>
+    <published>2022-07-16T10:04:37.000Z</published>
+    <updated>2022-07-16T11:49:12.309Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/2022/07/16/minecraftFrp/top.jpg" class=""><p>我的世界服务器内网穿透来了!</p><h3 id="一-什么是内网穿透"><a href="#一-什么是内网穿透" class="headerlink" title="一.什么是内网穿透"></a>一.什么是内网穿透</h3><p>内网穿透，也即 NAT 穿透，进行 NAT 穿透是为了使具有某一个特定源 IP 地址和源端口号的数据包不被 NAT 设备屏蔽而正确路由到内网主机。下面就相互通信的主机在网络中与 NAT 设备的相对位置介绍内网穿透方法。</p><p>UDP 内网穿透的实质是利用<a href="https://baike.baidu.com/item/%E8%B7%AF%E7%94%B1%E5%99%A8/108294">路由器</a>上的NAT 系统。NAT 是一种将私有（保留）地址转化为合法IP地址的转换技术，它被广泛应用于各种类型 Internet 接入方式和各种类型的网络中。NAT可以完成重用地址，并且对于内部的网络结构可以实现对外隐蔽。(摘自百度百科)</p><p>总之就是可以让内网的ip变成公网的ip。</p><h3 id="二-安装Frp"><a href="#二-安装Frp" class="headerlink" title="二.安装Frp"></a>二.安装Frp</h3><p>内网穿透这里使用Sakura Frp。首先用电脑进入Sakura Frp的官网，注册账号，注册账号后还要实名认证，实名认证后点开穿透里的软件下载。</p><img src="/2022/07/16/minecraftFrp/1.jpg" class=""><p>再点Linux中的arm64的复制链接:</p><img src="/2022/07/16/minecraftFrp/2.jpg" class=""><p>再在SSH里进入一个空的目录并输入:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget 刚刚复制的链接</span><br></pre></td></tr></table></figure><p>下载好后回到刚刚的网站，点开穿透里的隧道列表，点击新建隧道随便选个没有满载的国内节点。隧道类型选择TCP。</p><img src="/2022/07/16/minecraftFrp/3.jpg" class=""><h3 id="三-运行Frp"><a href="#三-运行Frp" class="headerlink" title="三.运行Frp"></a>三.运行Frp</h3><p>其余默认。选好后点击创建，再点击用户下的用户信息，复制账户信息的访问密钥之后回到SSH输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv frpc_linux_arm64  frp</span><br></pre></td></tr></table></figure><p>来修改名称，再输入:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 frp</span><br></pre></td></tr></table></figure><p>来给予权限，最后输入:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./frp</span><br></pre></td></tr></table></figure><p>来启动内网穿透。</p><p>初次启动时会要求输入密钥，也就是刚刚复制的密钥，输入后按回车，再用方向键选择ok，最后选择要启动的节点按下Ctrl+C打开内网穿透。之后就可以通过frp给的ipv6和端口访问上服务器了。</p><img src="/2022/07/16/minecraftFrp/4.jpg" class=""><p>注:如果提示“无法连接至世界。”可能是因为客户端版本不对。</p>]]></content>
+    
+    
+    <summary type="html">普通的我的世界BE服务器内网穿透教程</summary>
+    
+    
+    
+    <category term="香橙派" scheme="http://example.com/categories/%E9%A6%99%E6%A9%99%E6%B4%BE/"/>
+    
+    
+    <category term="香橙派" scheme="http://example.com/tags/%E9%A6%99%E6%A9%99%E6%B4%BE/"/>
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="我的世界" scheme="http://example.com/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/"/>
+    
+    <category term="游戏" scheme="http://example.com/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="知识" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="BE" scheme="http://example.com/tags/BE/"/>
+    
+    <category term="frp" scheme="http://example.com/tags/frp/"/>
+    
+    <category term="内网穿透" scheme="http://example.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+    <category term="Sakura Frp" scheme="http://example.com/tags/Sakura-Frp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>香橙派搭建我的世界nukkitBE服务器</title>
     <link href="http://example.com/2022/07/16/%E9%A6%99%E6%A9%99%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CBE%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     <id>http://example.com/2022/07/16/%E9%A6%99%E6%A9%99%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CBE%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
     <published>2022-07-16T02:00:29.000Z</published>
-    <updated>2022-07-16T09:37:43.687Z</updated>
+    <updated>2022-07-16T10:07:47.051Z</updated>
     
     <content type="html"><![CDATA[<img src="/2022/07/16/%E9%A6%99%E6%A9%99%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CBE%E6%9C%8D%E5%8A%A1%E5%99%A8/top.jpg" class=""><p>大家好啊，我又准备讲一些杂七杂八的内容。</p><hr><h3 id="一-什么是nukkit"><a href="#一-什么是nukkit" class="headerlink" title="一.什么是nukkit"></a>一.什么是nukkit</h3><p>Nukkit是一个Minecraft BE版(基岩版)的开服核心。就像它的名字一样，该核心与JE版核心Bukkit十分相像。它使用JAVA编写，更加快捷、稳定且对开发者友好。但两者插件可并不能通用。如果你有过Bukkit及其衍生核心的开服经验，那么Nukkit对你来说是十分容易上手的。如果没有，那也无需担心，Nukkit的操作相对来说是很简单的。</p><p>与Nukkit相关的网站：<br>Nukkit官网（现已更改域名）：<a href="https://cloudburstmc.org/">https://cloudburstmc.org</a>（你可以在上面找到很多Nukkit的资源，但由于是国外网站，你需要拥有一定的英语知识去进行浏览和交流）<br>Nukkit官方构建下载地址：<a href="https://ci.nukkitx.com/job/NukkitX/">https://ci.nukkitx.com/job/NukkitX/</a> （你可以在这里下载到最新的官方核心，不要担心看不懂，下面我会着重介绍它。<br>Nukkit维基：<a href="https://cloudburstmc.org/wiki/nukkit">https://cloudburstmc.org/wiki/nukkit</a> （包含一些Nukkit的相关介绍，同样需要你有一定的英语知识）</p><hr><h3 id="二-如何下载"><a href="#二-如何下载" class="headerlink" title="二.如何下载"></a>二.如何下载</h3><p>开始之前需要准备Java8，香橙派仅需要输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install openjdk-8-jdk</span><br></pre></td></tr></table></figure><p>下载核心:你可以通过此链接访问Nukkit的官方构建下载地址：<a href="https://ci.nukkitx.com/job/NukkitX/">https://ci.nukkitx.com/job/NukkitX/</a><br>①打开此链接，你会看到这样的界面：</p><img src="/2022/07/16/%E9%A6%99%E6%A9%99%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CBE%E6%9C%8D%E5%8A%A1%E5%99%A8/1.jpg" class=""><p>②现在将你的页面往下滑，找到“Nukkit”，请注意是Nukkit！而不是其他任何带着Nukkit字眼的东西。</p><p>③进入Nukkit这个页面，你会发现又打开一堆东西，</p><img src="/2022/07/16/%E9%A6%99%E6%A9%99%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CBE%E6%9C%8D%E5%8A%A1%E5%99%A8/2.jpg" class=""><p>你只需要找到“master“主分支，也就是页面里标粗字体的那个。</p><p>④进入master主分支，你会打开一个这样的页面：</p><img src="/2022/07/16/%E9%A6%99%E6%A9%99%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CBE%E6%9C%8D%E5%8A%A1%E5%99%A8/3.jpg" class=""><p>红笔圈出来的部分即为构建历史。你通常可以在这里下载各个版本的核心（这里单指主分支的版本）。一般如果没有特殊需要，我们都是下载最新一次构建的核心。截止到发帖时，最新的核心是第994次构建（即#994）<br>⑤点进去你想下载的那个版本的核心，点击那个“nukkit-1.0-SNAPSHOT.jar”便可开始下载。</p><p>如果该构建前标着一个红色的感叹号，请不要下载！这意味着该构建是失败的。</p><hr><h3 id="三-搭建服务器"><a href="#三-搭建服务器" class="headerlink" title="三.搭建服务器"></a>三.搭建服务器</h3><p>把服务端文件放到香橙派里一个随便的位置（最好是容易找到的），如我的目录就是/home/mc/，以下都用这个目录做示范。</p><p>第一步，先进入服务器目录。</p><p>第二步，给予服务器目录全部权限输入:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 /home/mc/</span><br></pre></td></tr></table></figure><p>第三步，输入:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -Xmx768m -Xms768m -jar nukkit-1.0-SNAPSHOT.jar</span><br></pre></td></tr></table></figure><p> 来启动服务器（因我的香橙派是zero2，所以内存只有1G，不然-Xmx和-Xms后可以填更高的内存）</p><p>第四步，选择语言</p><p>第五步，输入version查看我的世界版本</p><p>第六步，下载对应的我的世界版本并打开</p><p>最后一步，注册并打开多人游戏输入香橙派的ip地址</p><p>恭喜你获得了一个自己的基岩版局域网服务器!!!下个文章再介绍如何让外网连接到这个服务器。</p>]]></content>
     
     
-    <summary type="html">普通的我的世界BE服务器教程</summary>
+    <summary type="html">普通的我的世界BE服务器搭建教程</summary>
     
     
     
