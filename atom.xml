@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-17T11:06:02.597Z</updated>
+  <updated>2022-07-19T01:42:57.704Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>香橙派搭建Typecho博客</title>
+    <link href="http://example.com/2022/07/18/xcpbk/"/>
+    <id>http://example.com/2022/07/18/xcpbk/</id>
+    <published>2022-07-18T10:04:37.000Z</published>
+    <updated>2022-07-19T01:42:57.704Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>安装Typecho博客其实非常的简单</p><h3 id="零-简介"><a href="#零-简介" class="headerlink" title="零.简介"></a>零.简介</h3><p>Typecho 是国内开发者开发的一款开源免费的动态博客程序，可以运行在基于 PHP 环境的各种平台上。</p><ul><li>官网：<a href="https://link.zhihu.com/?target=http://typecho.org/">Typecho Official Site</a></li><li>GitHub：<a href="https://link.zhihu.com/?target=https://github.com/typecho/typecho">typecho: A PHP Blogging Platform.</a></li></ul><p>相比于同为动态博客并且广为人知的 WordPress 来说，Typecho 的一大特点就是 “精简”。全部文件不足 500KB，但却也实现了完整的主题和插件支持。博客程序很轻量，资源占用也很低，原生支持 Markdown 语法。属于省心并且简洁的博客类型。</p><h3 id="一-下载前置"><a href="#一-下载前置" class="headerlink" title="一.下载前置"></a>一.下载前置</h3><p>废话不多说，直接进入下载环节</p><p>下载Apache2</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install apache2</span><br></pre></td></tr></table></figure><p>下载PHP</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install php</span><br></pre></td></tr></table></figure><p>下载MySQL</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install mysql-server</span><br></pre></td></tr></table></figure><p>下载MysqlPHP</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo  apt-get install php-mysql</span><br></pre></td></tr></table></figure><p>下载phpMyAdmin<br>这个就不能一键安装了，需要先去<a href="https://www.phpmyadmin.net/downloads/">phpMyAdmin官网</a>下载压缩包，解压后放入/var/www/html/目录下。</p><p>下载Typecho<br>这个一样不能一键安装，需要去<a href="http://typecho.org/">Typecho官网</a>下载压缩包，解压后放入/var/www/html/目录下。</p><h3 id="二-设置Mysql密码"><a href="#二-设置Mysql密码" class="headerlink" title="二.设置Mysql密码"></a>二.设置Mysql密码</h3><p>打开ssh给予Typecho权限</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 /var/www/html/</span><br></pre></td></tr></table></figure><p>再在ssh打开mysql</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql</span><br></pre></td></tr></table></figure><p>修改密码为admin</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER &#x27;root&#x27;@&#x27;localhost&#x27; IDENTIFIED WITH mysql_native_password by &#x27;admin&#x27;;</span><br></pre></td></tr></table></figure><p>再Ctrl+C退出mysql，最后刷新Apache2</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apache2 restart</span><br></pre></td></tr></table></figure><h3 id="三-配置Typecho"><a href="#三-配置Typecho" class="headerlink" title="三.配置Typecho"></a>三.配置Typecho</h3><p>在浏览器输入香橙派的ip，数据库用户名输入root，数据库密码输入刚刚设置的密码，数据库名输入mysql，其他按照提示输入。</p><p>等到你看到一篇演示博客后你就拥有了一个内网的博客，只需要输入香橙派的ip就可以访问到了。</p><p>如果需要公网的博客，可以购买腾讯云，阿里云的服务器来搭建，步骤基本差不多，语句有所不一。</p>]]></content>
+    
+    
+    <summary type="html">用香橙派搭建一个带后台的博客</summary>
+    
+    
+    
+    <category term="香橙派" scheme="http://example.com/categories/%E9%A6%99%E6%A9%99%E6%B4%BE/"/>
+    
+    
+    <category term="博客" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="MySQL" scheme="http://example.com/tags/MySQL/"/>
+    
+    <category term="phpMyAdmin" scheme="http://example.com/tags/phpMyAdmin/"/>
+    
+    <category term="php" scheme="http://example.com/tags/php/"/>
+    
+    <category term="Typecho" scheme="http://example.com/tags/Typecho/"/>
+    
+  </entry>
   
   <entry>
     <title>香橙派用alist作个人网盘</title>
