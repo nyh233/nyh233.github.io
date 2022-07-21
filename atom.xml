@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-21T08:02:38.796Z</updated>
+  <updated>2022-07-21T08:09:20.547Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022/07/21/xcpxt/"/>
     <id>http://example.com/2022/07/21/xcpxt/</id>
     <published>2022-07-21T08:44:37.000Z</published>
-    <updated>2022-07-21T08:02:38.796Z</updated>
+    <updated>2022-07-21T08:09:20.547Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="零-前言"><a href="#零-前言" class="headerlink" title="零.前言"></a>零.前言</h3><p>并非只有这样的方法来安装系统</p><hr><h3 id="一-下载系统"><a href="#一-下载系统" class="headerlink" title="一.下载系统"></a>一.下载系统</h3><p>前往<a href="http://www.orangepi.cn/">香橙派官网</a>点开服务与下载里的下载</p><img src="/2022/07/21/xcpxt/1.jpg" class=""><p>再点击对应的香橙派型号，然后点ubuntu镜像</p><img src="/2022/07/21/xcpxt/2.jpg" class=""><p>下载服务器版</p><img src="/2022/07/21/xcpxt/3.jpg" class=""><hr><h3 id="二-下载安装工具"><a href="#二-下载安装工具" class="headerlink" title="二.下载安装工具"></a>二.下载安装工具</h3><p>下载Win32DiskImager，直接在百度上搜就行了，千万不要点高速下载或p2p下载器。</p><hr><h3 id="三-给TF卡装系统"><a href="#三-给TF卡装系统" class="headerlink" title="三.给TF卡装系统"></a>三.给TF卡装系统</h3><p>插入TF卡，打开Win32DiskImager，选择刚刚下载的镜像</p><img src="/2022/07/21/xcpxt/4.jpg" class=""><p>等待写入完成</p><p>写入完成后把TF卡拿出来，插入香橙派的TF卡槽</p><hr><h3 id="四-用ssh连接"><a href="#四-用ssh连接" class="headerlink" title="四.用ssh连接"></a>四.用ssh连接</h3><p>从Xshell官网下载Xshell，然后点击新建，在ip地址那栏输入香橙派的ip地址</p><img src="/2022/07/21/xcpxt/4.jpg" class=""><p>连接上后用户名是orangepi，密码是orangepi，root密码也是orangepi</p>]]></content>
     
