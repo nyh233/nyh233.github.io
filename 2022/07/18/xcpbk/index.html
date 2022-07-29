@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>香橙派搭建Typecho博客 | 无  纬</title><meta name="keywords" content="博客,MySQL,phpMyAdmin,php,Typecho"><meta name="author" content="Nyh"><meta name="copyright" content="Nyh"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="用香橙派搭建一个带后台的博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="香橙派搭建Typecho博客">
+<meta property="og:url" content="http://example.com/2022/07/18/xcpbk/index.html">
+<meta property="og:site_name" content="无  纬">
+<meta property="og:description" content="用香橙派搭建一个带后台的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/top4-2.jpg">
+<meta property="article:published_time" content="2022-07-18T10:04:37.000Z">
+<meta property="article:modified_time" content="2022-07-19T01:55:38.979Z">
+<meta property="article:author" content="Nyh">
+<meta property="article:tag" content="博客">
+<meta property="article:tag" content="MySQL">
+<meta property="article:tag" content="phpMyAdmin">
+<meta property="article:tag" content="php">
+<meta property="article:tag" content="Typecho">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/top4-2.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/07/18/xcpbk/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '香橙派搭建Typecho博客',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-07-19 09:55:38'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="无  纬" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/loading.gif" data-original="/img/awa.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-sitemap"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/top4.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">无  纬</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-sitemap"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">香橙派搭建Typecho博客</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-18T10:04:37.000Z" title="发表于 2022-07-18 18:04:37">2022-07-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-07-19T01:55:38.979Z" title="更新于 2022-07-19 09:55:38">2022-07-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%A6%99%E6%A9%99%E6%B4%BE/">香橙派</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="香橙派搭建Typecho博客"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>安装Typecho博客其实非常的简单</p>
+<h3 id="零-简介"><a href="#零-简介" class="headerlink" title="零.简介"></a>零.简介</h3><p>Typecho 是国内开发者开发的一款开源免费的动态博客程序，可以运行在基于 PHP 环境的各种平台上。</p>
+<ul>
+<li>官网：<a target="_blank" rel="noopener" href="http://typecho.org/">Typecho Official Site</a></li>
+<li>GitHub：<a target="_blank" rel="noopener" href="https://github.com/typecho/typecho">typecho: A PHP Blogging Platform.</a></li>
+</ul>
+<p>相比于同为动态博客并且广为人知的 WordPress 来说，Typecho 的一大特点就是 “精简”。全部文件不足 500KB，但却也实现了完整的主题和插件支持。博客程序很轻量，资源占用也很低，原生支持 Markdown 语法。属于省心并且简洁的博客类型。</p>
+<h3 id="一-下载前置"><a href="#一-下载前置" class="headerlink" title="一.下载前置"></a>一.下载前置</h3><p>废话不多说，直接进入下载环节</p>
+<h4 id="下载Apache2"><a href="#下载Apache2" class="headerlink" title="下载Apache2"></a>下载Apache2</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install apache2</span><br></pre></td></tr></table></figure>
+
+<h4 id="下载PHP"><a href="#下载PHP" class="headerlink" title="下载PHP"></a>下载PHP</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install php</span><br></pre></td></tr></table></figure>
+
+<h4 id="下载MySQL"><a href="#下载MySQL" class="headerlink" title="下载MySQL"></a>下载MySQL</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install mysql-server</span><br></pre></td></tr></table></figure>
+
+<h4 id="下载MysqlPHP"><a href="#下载MysqlPHP" class="headerlink" title="下载MysqlPHP"></a>下载MysqlPHP</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo  apt-get install php-mysql</span><br></pre></td></tr></table></figure>
+
+<h4 id="下载phpMyAdmin"><a href="#下载phpMyAdmin" class="headerlink" title="下载phpMyAdmin"></a>下载phpMyAdmin</h4><p>这个就不能一键安装了，需要先去<a target="_blank" rel="noopener" href="https://www.phpmyadmin.net/downloads/">phpMyAdmin官网</a>下载压缩包，解压后放入/var/www/html/目录下。</p>
+<h4 id="下载Typecho"><a href="#下载Typecho" class="headerlink" title="下载Typecho"></a>下载Typecho</h4><p>这个一样不能一键安装，需要去<a target="_blank" rel="noopener" href="http://typecho.org/">Typecho官网</a>下载压缩包，解压后放入/var/www/html/目录下。</p>
+<h3 id="二-设置Mysql密码"><a href="#二-设置Mysql密码" class="headerlink" title="二.设置Mysql密码"></a>二.设置Mysql密码</h3><p>打开ssh给予Typecho权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 /var/www/html/</span><br></pre></td></tr></table></figure>
+
+<p>再在ssh打开mysql</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql</span><br></pre></td></tr></table></figure>
+
+<p>修改密码为admin</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER &#x27;root&#x27;@&#x27;localhost&#x27; IDENTIFIED WITH mysql_native_password by &#x27;admin&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>再Ctrl+C退出mysql，最后刷新Apache2</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apache2 restart</span><br></pre></td></tr></table></figure>
+
+<h3 id="三-配置Typecho"><a href="#三-配置Typecho" class="headerlink" title="三.配置Typecho"></a>三.配置Typecho</h3><p>在浏览器输入香橙派的ip，数据库用户名输入root，数据库密码输入刚刚设置的密码，数据库名输入mysql，其他按照提示输入。</p>
+<p>等到你看到一篇演示博客后你就拥有了一个内网的博客，只需要输入香橙派的ip就可以访问到了。</p>
+<p>如果需要公网的博客，可以购买腾讯云，阿里云的服务器来搭建，步骤基本差不多，语句有所不一。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://space.bilibili.com/666661136?spm_id_from=333.1007.0.0">Nyh</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://nyh233.github.io/2022/07/18/xcpbk/">https://nyh233.github.io/2022/07/18/xcpbk/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">无  纬</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a><a class="post-meta__tags" href="/tags/MySQL/">MySQL</a><a class="post-meta__tags" href="/tags/phpMyAdmin/">phpMyAdmin</a><a class="post-meta__tags" href="/tags/php/">php</a><a class="post-meta__tags" href="/tags/Typecho/">Typecho</a></div><div class="post_share"><div class="social-share" data-image="/img/top4-2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/07/21/xcpxt/"><img class="prev-cover" src="/img/loading.gif" data-original="/img/top5-2.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">香橙派安装Linux系统</div></div></a></div><div class="next-post pull-right"><a href="/2022/07/17/xcpwangpan/"><img class="next-cover" src="/img/loading.gif" data-original="/img/top3.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">香橙派用alist作个人网盘</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/loading.gif" data-original="/img/awa.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Nyh</div><div class="author-info__description">无聊</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/nyh233"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%B6-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">零.简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E4%B8%8B%E8%BD%BD%E5%89%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">一.下载前置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDApache2"><span class="toc-number">2.1.</span> <span class="toc-text">下载Apache2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDPHP"><span class="toc-number">2.2.</span> <span class="toc-text">下载PHP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDMySQL"><span class="toc-number">2.3.</span> <span class="toc-text">下载MySQL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDMysqlPHP"><span class="toc-number">2.4.</span> <span class="toc-text">下载MysqlPHP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDphpMyAdmin"><span class="toc-number">2.5.</span> <span class="toc-text">下载phpMyAdmin</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDTypecho"><span class="toc-number">2.6.</span> <span class="toc-text">下载Typecho</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E8%AE%BE%E7%BD%AEMysql%E5%AF%86%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">二.设置Mysql密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E9%85%8D%E7%BD%AETypecho"><span class="toc-number">4.</span> <span class="toc-text">三.配置Typecho</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/07/29/tasjc/" title="制作超级马里奥兄弟TAS视频"><img src="/img/loading.gif" data-original="/img/TAStop1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="制作超级马里奥兄弟TAS视频"/></a><div class="content"><a class="title" href="/2022/07/29/tasjc/" title="制作超级马里奥兄弟TAS视频">制作超级马里奥兄弟TAS视频</a><time datetime="2022-07-29T10:56:37.000Z" title="发表于 2022-07-29 18:56:37">2022-07-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/21/xcpxt/" title="香橙派安装Linux系统"><img src="/img/loading.gif" data-original="/img/top5-2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="香橙派安装Linux系统"/></a><div class="content"><a class="title" href="/2022/07/21/xcpxt/" title="香橙派安装Linux系统">香橙派安装Linux系统</a><time datetime="2022-07-21T08:44:37.000Z" title="发表于 2022-07-21 16:44:37">2022-07-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/18/xcpbk/" title="香橙派搭建Typecho博客"><img src="/img/loading.gif" data-original="/img/top4-2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="香橙派搭建Typecho博客"/></a><div class="content"><a class="title" href="/2022/07/18/xcpbk/" title="香橙派搭建Typecho博客">香橙派搭建Typecho博客</a><time datetime="2022-07-18T10:04:37.000Z" title="发表于 2022-07-18 18:04:37">2022-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/17/xcpwangpan/" title="香橙派用alist作个人网盘"><img src="/img/loading.gif" data-original="/img/top3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="香橙派用alist作个人网盘"/></a><div class="content"><a class="title" href="/2022/07/17/xcpwangpan/" title="香橙派用alist作个人网盘">香橙派用alist作个人网盘</a><time datetime="2022-07-17T10:42:37.000Z" title="发表于 2022-07-17 18:42:37">2022-07-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/16/minecraftFrp/" title="给我的世界Nukkit服务器内网穿透"><img src="/img/loading.gif" data-original="/img/top2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="给我的世界Nukkit服务器内网穿透"/></a><div class="content"><a class="title" href="/2022/07/16/minecraftFrp/" title="给我的世界Nukkit服务器内网穿透">给我的世界Nukkit服务器内网穿透</a><time datetime="2022-07-16T10:04:37.000Z" title="发表于 2022-07-16 18:04:37">2022-07-16</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Nyh</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
