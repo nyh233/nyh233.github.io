@@ -3,11 +3,11 @@
   <title>无 纬</title>
   
   <subtitle>No Latitude</subtitle>
-  <link href="https://nyhblog/atom.xml" rel="self"/>
+  <link href="https://nyhblog.netlify.app/atom.xml" rel="self"/>
   
-  <link href="https://nyhblog/"/>
+  <link href="https://nyhblog.netlify.app/"/>
   <updated>2024-01-30T11:32:08.820Z</updated>
-  <id>https://nyhblog/</id>
+  <id>https://nyhblog.netlify.app/</id>
   
   <author>
     <name>轮椅人爱玩R99</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>记七年级上册感</title>
-    <link href="https://nyhblog/2023/01/04/AboutMiddleSchoolSevenUp/"/>
-    <id>https://nyhblog/2023/01/04/AboutMiddleSchoolSevenUp/</id>
+    <link href="https://nyhblog.netlify.app/2023/01/04/AboutMiddleSchoolSevenUp/"/>
+    <id>https://nyhblog.netlify.app/2023/01/04/AboutMiddleSchoolSevenUp/</id>
     <published>2023-01-04T07:48:29.000Z</published>
     <updated>2024-01-30T11:32:08.820Z</updated>
     
@@ -35,9 +35,9 @@
     
     
     
-    <category term="学校" scheme="https://nyhblog/tags/%E5%AD%A6%E6%A0%A1/"/>
+    <category term="学校" scheme="https://nyhblog.netlify.app/tags/%E5%AD%A6%E6%A0%A1/"/>
     
-    <category term="记述" scheme="https://nyhblog/tags/%E8%AE%B0%E8%BF%B0/"/>
+    <category term="记述" scheme="https://nyhblog.netlify.app/tags/%E8%AE%B0%E8%BF%B0/"/>
     
   </entry>
   

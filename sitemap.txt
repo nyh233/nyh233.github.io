@@ -1,8 +1,8 @@
-https://nyhblog/2023/01/04/AboutMiddleSchoolSevenUp/
-https://nyhblog/about/index.html
-https://nyhblog/link/index.html
-https://nyhblog/categories/index.html
-https://nyhblog/tags/index.html
-https://nyhblog/
-https://nyhblog/tags/%E5%AD%A6%E6%A0%A1/
-https://nyhblog/tags/%E8%AE%B0%E8%BF%B0/
+https://nyhblog.netlify.app/2023/01/04/AboutMiddleSchoolSevenUp/
+https://nyhblog.netlify.app/about/index.html
+https://nyhblog.netlify.app/link/index.html
+https://nyhblog.netlify.app/categories/index.html
+https://nyhblog.netlify.app/tags/index.html
+https://nyhblog.netlify.app/
+https://nyhblog.netlify.app/tags/%E5%AD%A6%E6%A0%A1/
+https://nyhblog.netlify.app/tags/%E8%AE%B0%E8%BF%B0/
